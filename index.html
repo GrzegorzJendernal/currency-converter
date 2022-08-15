@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przelicznik walut</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/result.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Kalkulator walutowy</h1>
+    </header>
+    <form class="form js-form">
+        <fieldset class="form__field">
+            <legend class="form__legend">Przelicz swoją walutę!</legend>
+            <p>
+                <label class="form__label">Ile posiadam w złotych polskich?<br><input class="js-PLN" type="number"
+                        min="0" step="0.01" required placeholder="wpisz wartość w PLN">
+                </label>
+            </p>
+            <p>
+                <label class="form__label">W jakiej walucie chcę otrzymać wynik?<br>
+                    <select class="js-currency" name="currency">
+                        <option value="4.7021">Euro (EUR)</option>
+                        <option value="4.5919">Dolar amerykański (USD)</option>
+                        <option value="0.0011">Peso kolumbijskie (COP)</option>
+                    </select>
+                </label>
+            </p>
+        </fieldset>
+        <button class="form__button" type="submit">Przelicz</button>
+    </form>
+    <p class="result">
+        Otrzymam: <span class="result__value js-result">...</span>
+    </p>
+    <p>
+        <span class="js-comment"></span>
+    </p>
+    <footer class="footer">Kurs walut na podstawie: Tabela nr 153/A/NBP/2022 z dnia 2022-08-09 oraz Tabela nr
+        031/B/NBP/2022 z dnia
+        2022-08-03</footer>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #d9d9d9;
+    max-width: 600px;
+    margin: 5px auto;
+    padding: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+}
