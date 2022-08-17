@@ -30,7 +30,7 @@
     </header>
     <form class="form js-form">
         <fieldset class="form__field">
-            <legend class="form__legend">Przelicz swoją walutę!</legend>
+            <h1 class="form__header">Przelicz swoją walutę!</h1>
             <p>
                 <label class="form__label">Ile posiadam w złotych polskich?<br><input class="js-PLN" type="number"
                         min="0" step="0.01" required placeholder="wpisz wartość w PLN">
@@ -45,8 +45,8 @@
                     </select>
                 </label>
             </p>
+            <button class="form__button" type="submit">Przelicz</button>
         </fieldset>
-        <button class="form__button" type="submit">Przelicz</button>
     </form>
     <p class="result">
         Otrzymam: <span class="result__value js-result">...</span>

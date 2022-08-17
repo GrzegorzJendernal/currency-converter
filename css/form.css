@@ -6,11 +6,10 @@
     background-color: #cfcfcf;
     margin: 5px;
     padding: 5px;
-    padding-bottom: 25px;
     border-radius: 10px;
 }
 
-.form__legend {
+.form__header {
     font-size: 20px;
     font-weight: bold;
 }
