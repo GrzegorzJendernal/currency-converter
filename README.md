@@ -7,4 +7,10 @@ Hello! This is my currency converter. You can calculate your Polish Zlotys on ot
 - type how many PLN You have,
 - select the currency you want to exchange,
 - click on button.
+## Technologies
+To create the page I used:
+1. HTML
+2. CSS
+3. JavaScript
+4. BEM convention
 ### Enjoy using!
