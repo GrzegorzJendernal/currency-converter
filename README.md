@@ -10,9 +10,9 @@ Hello! This is my currency converter. You can calculate your Polish Zlotys on ot
 - click on button.
 ## Technologies
 To create the page I used:
-1. HTML
-2. CSS
-3. JavaScript
-4. BEM convention
-5. TypeScript
+1. TypeScript
+2. JavaScript
+3. HTML
+4. CSS
+5. BEM convention
 ### Enjoy using!

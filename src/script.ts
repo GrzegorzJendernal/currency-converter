@@ -18,23 +18,23 @@
     };
 
     const changeResultText = (amount: number, currency: string, result: number) => {
-        const resultElement = document.querySelector(".js-result") as HTMLSpanElement;
+        const resultElement = <HTMLSpanElement>document.querySelector(".js-result");
         resultElement.innerText = `${result.toFixed(2)} ${currency}`;
     };
 
     const onFormSubmit = (event: Event) => {
         event.preventDefault();
-        const plnElement = document.querySelector(".js-PLN") as HTMLInputElement;
-        const currencyElement = document.querySelector(".js-currency") as HTMLSelectElement;
+        const plnElement = <HTMLInputElement>document.querySelector(".js-PLN");
+        const currencyElement = <HTMLSelectElement>document.querySelector(".js-currency");
         const amount = Number(plnElement.value);
         const currency = currencyElement.value;
-        const result = calculateResult(amount, currency) as number;
+        const result = <number>calculateResult(amount, currency);
         changeResultText(amount, currency, result);
     };
 
     const init = () => {
-        const formElement = document.querySelector(".js-form") as HTMLFormElement;
-        formElement.addEventListener("submit", onFormSubmit as EventListener);
+        const formElement = <HTMLFormElement>document.querySelector(".js-form");
+        formElement.addEventListener("submit", onFormSubmit);
         helloWorld();
     };
     init();
