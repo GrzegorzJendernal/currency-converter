@@ -14,4 +14,5 @@ To create the page I used:
 2. CSS
 3. JavaScript
 4. BEM convention
+5. TypeScript
 ### Enjoy using!
